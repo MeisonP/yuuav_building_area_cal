@@ -2,9 +2,8 @@
 是基于参考物做标定的面积ref_area， 人工手动描边。
 
 ### 使用步骤 （依赖于第三方平台来做轮廓描绘，以及提供contours坐的api接口）
-*1）先安装 yuuav_building_area_draw
-> 
-cd 到 yuuav_building_area_draw 根目录，并依次执行：
+* 1）先安装 yuuav_building_area_draw
+> cd 到 yuuav_building_area_draw 根目录，并依次执行：
 >
 meteor npm install
 >
