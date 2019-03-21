@@ -10,10 +10,10 @@
 > meteor npm start
 >
 * 2）用 yuuav_building_area_draw 提取/描绘 building的轮廓
+> a.将图放到其输入路径（可在setting.json中修改）例如：～/sse-images/**.png
 >
-a.将图放到其输入路径（可在setting.json中修改）例如：～/sse-images/**.png
+> b.打开meteor 启动后的 url，选择对应的图片进行轮廓提取，contours的json文件会以url 接口的形式提供使用
 >
-b.打开meteor 启动后的 url，选择对应的图片进行轮廓提取，contours的json文件会以url 接口的形式提供使用
+> c.下载轮廓描完之后的图片.例如：~/Download/**_segmentation.png
 >
-c.下载轮廓描完之后的图片.例如：~/Download/**_segmentation.png
-* 2）yuuav_building_area_cal 添加下载下来的图片，通过前端交互计算面积。
+* 3）yuuav_building_area_cal 添加下载下来的图片，通过前端交互计算面积。
