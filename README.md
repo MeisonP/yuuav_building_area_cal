@@ -4,10 +4,8 @@
 ### 使用步骤 （依赖于第三方平台来做轮廓描绘，以及提供contours坐的api接口）
 * 1）先安装 yuuav_building_area_draw
 > cd 到 yuuav_building_area_draw 根目录，并依次执行：
->
-meteor npm install
->
-meteor npm start
+> meteor npm install
+> meteor npm start
 * 2）用 yuuav_building_area_draw 提取/描绘 building的轮廓
 >
 a.将图放到其输入路径（可在setting.json中修改）例如：～/sse-images/**.png
