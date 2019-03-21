@@ -41,9 +41,12 @@ def main(img_name, alpha):  # pass the image name from front-end, such as test.p
             coeff_area = ref_area / ref_area_pixel  # 1 square = (coeff_area * pixel_area)
 
             ref_cir_pixel = cv2.arcLength(ref_contours[0], True)
-            ref_side = pow(ref_area, 0.5)  # m
+           # ref_side = pow(ref_area, 0.5)  # m
+            ref_cir = pow(ref_area, 0.5) * 4
 
-            coeff_side = ref_side / ref_cir_pixel
+            # coeff_side = ref_side / ref_cir_pixel
+            coeff_cir = ref_cir / ref_cir_pixel
+            
 
             print "reference pixel: area={0}, cir={1}".format(ref_area_pixel, ref_cir_pixel)
 
@@ -65,7 +68,7 @@ def main(img_name, alpha):  # pass the image name from front-end, such as test.p
                     print "building pixel: area={}, circumference={}".format(area_pixel, cir_pixel)
 
                     area = area_pixel * coeff_area
-                    cir = cir_pixel * coeff_side
+                    cir = cir_pixel * coeff_cir
                     print "real value: {0} m2, {1} m".format(area, cir)
 
     return area, cir
